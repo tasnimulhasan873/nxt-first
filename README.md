@@ -17,7 +17,7 @@ A modern e-commerce demo app built with Next.js 15 (App Router), Firebase authen
 1. **Clone the repository:**
 
    ```sh
-   git clone <your-repo-url>
+   git clone <[your-repo-url](https://github.com/tasnimulhasan873/nxt-first)>
    cd nxt-app
    ```
 
