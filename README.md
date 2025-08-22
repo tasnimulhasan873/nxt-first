@@ -1,3 +1,61 @@
+# Nxt-App
+
+A modern e-commerce demo app built with Next.js 15 (App Router), Firebase authentication, and Tailwind CSS. Features public and protected pages, product management, and a global light/dark theme toggle.
+
+## Features
+
+- Next.js 15 (App Router)
+- Firebase authentication (Google & email/password)
+- Public product list and details
+- Protected dashboard and add product page
+- Modern UI with Tailwind CSS
+- Global light/dark theme toggle
+- Responsive design
+
+## Setup & Installation
+
+1. **Clone the repository:**
+
+   ```sh
+   git clone <your-repo-url>
+   cd nxt-app
+   ```
+
+2. **Install dependencies:**
+
+   ```sh
+   npm install
+   ```
+
+3. **Configure Firebase:**
+
+   - Copy your Firebase config to `firebase.init.js` (replace placeholder values).
+   - Enable Email/Password and Google authentication in your Firebase project.
+
+4. **Run the development server:**
+   ```sh
+   npm run dev
+   ```
+   The app will be available at [http://localhost:3000](http://localhost:3000).
+
+## Route Summary
+
+| Route                    | Access    | Description                                |
+| ------------------------ | --------- | ------------------------------------------ |
+| `/`                      | Public    | Landing page                               |
+| `/products`              | Public    | Product list                               |
+| `/products/[id]`         | Public    | Product details                            |
+| `/login`                 | Public    | Login page (Google & credentials)          |
+| `/dashboard`             | Protected | Dashboard with Add Product button          |
+| `/dashboard/add-product` | Protected | Add Product form (requires authentication) |
+
+- **Protected routes** require login. Unauthenticated users are redirected to `/login`.
+- **Theme toggle** is available in the Navbar and works globally.
+
+---
+
+Feel free to customize and extend this project for your needs!
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
